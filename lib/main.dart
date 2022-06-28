@@ -69,6 +69,10 @@ class MyApp extends StatelessWidget {
             fontSize: 40,
             fontWeight: FontWeight.w600,
           ),
+          subtitle2: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+          ),
         ).apply(
           bodyColor: const Color(0xff002055),
           displayColor: const Color(0xff002055),
