@@ -7,7 +7,7 @@ class TaskCard extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.finised,
-    required this.left,
+    required this.all,
     required this.bgColor,
     required this.borderColor,
     required this.titleColor,
@@ -15,7 +15,7 @@ class TaskCard extends StatelessWidget {
     required this.progressColor,
   }) : super(key: key);
   final String title, subtitle;
-  final int finised, left;
+  final int finised, all;
   final Color bgColor, borderColor, titleColor, subColor, progressColor;
   @override
   Widget build(BuildContext context) {
@@ -85,7 +85,7 @@ class TaskCard extends StatelessWidget {
                         ),
                         const SizedBox(width: 25),
                         Text(
-                          "$left/$finised",
+                          "$all/$finised",
                           style:
                               Theme.of(context).textTheme.headline6!.copyWith(
                                     color: progressColor,
@@ -98,7 +98,7 @@ class TaskCard extends StatelessWidget {
                       padding: const EdgeInsets.all(0),
                       width: 115,
                       lineHeight: 5,
-                      percent: left / finised,
+                      percent: all / finised,
                       backgroundColor: const Color(0xff004CCD),
                       progressColor: progressColor,
                       barRadius: const Radius.circular(2.5),
