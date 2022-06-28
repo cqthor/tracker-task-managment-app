@@ -1,4 +1,5 @@
 import 'package:flutter_svg/svg.dart';
+import 'package:tracker/screens/home/home_screens.dart';
 import 'package:tracker/screens/login_signup/sign_in.dart';
 
 import 'package:flutter/material.dart';
@@ -99,7 +100,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 const SizedBox(height: 24),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                          builder: (context) => const HomeScreens(),
+                        ),
+                        (Route<dynamic> route) => false);
+                  },
                   child: const Text("Sign In"),
                 ),
                 const SizedBox(height: 28),

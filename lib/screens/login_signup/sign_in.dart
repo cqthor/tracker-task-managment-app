@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:tracker/screens/home/home_screens.dart';
 import 'package:tracker/screens/login_signup/sign_up.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -92,7 +93,13 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
                 const SizedBox(height: 24),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                          builder: (context) => const HomeScreens(),
+                        ),
+                        (Route<dynamic> route) => false);
+                  },
                   child: const Text("Sign In"),
                 ),
                 const SizedBox(height: 28),
@@ -160,7 +167,8 @@ class _SignInScreenState extends State<SignInScreen> {
                       onTap: () {
                         Navigator.of(context).pushAndRemoveUntil(
                             MaterialPageRoute(
-                                builder: (context) => const SignUpScreen()),
+                              builder: (context) => const SignUpScreen(),
+                            ),
                             (Route<dynamic> route) => false);
                       },
                       child: Text(
