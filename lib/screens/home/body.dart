@@ -15,11 +15,21 @@ class HomeScreenBody extends StatelessWidget {
           padding: const EdgeInsets.only(left: 24, right: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+              IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.menu,
+                    size: 36,
+                  )),
               Text("Friday 26", style: Theme.of(context).textTheme.headline3!),
               IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.notifications)),
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.notifications,
+                    size: 36,
+                  )),
             ],
           ),
         ),
