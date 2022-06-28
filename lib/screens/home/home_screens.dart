@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/home/body.dart';
 
 class HomeScreens extends StatefulWidget {
   const HomeScreens({Key? key}) : super(key: key);
@@ -9,39 +10,13 @@ class HomeScreens extends StatefulWidget {
 
 class _HomeScreensState extends State<HomeScreens> {
   static const List<Widget> _pages = [
-    Text('home'),
+    HomeScreenBody(),
     Text('folder'),
     Text('add'),
     Text('chat'),
     Text('profile'),
   ];
-  static final List<AppBar> _appbars = [
-    AppBar(
-      title: const Text("Friday 26"),
-      leading: IconButton(
-        onPressed: () {},
-        icon: const Icon(Icons.menu),
-      ),
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.notifications),
-        ),
-      ],
-    ),
-    AppBar(
-      title: const Text("Appbar"),
-    ),
-    AppBar(
-      title: const Text("Appbar"),
-    ),
-    AppBar(
-      title: const Text("Appbar"),
-    ),
-    AppBar(
-      title: const Text("Appbar"),
-    )
-  ];
+
   int _selectedIndex = 0;
   void _onItemTapped(int index) {
     setState(() {
@@ -52,8 +27,8 @@ class _HomeScreensState extends State<HomeScreens> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _appbars.elementAt(_selectedIndex),
-      body: Center(child: _pages.elementAt(_selectedIndex)),
+      backgroundColor: Colors.white,
+      body: SafeArea(child: _pages.elementAt(_selectedIndex)),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         onTap: _onItemTapped,
