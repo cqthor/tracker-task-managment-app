@@ -74,16 +74,19 @@ class MyApp extends StatelessWidget {
           displayColor: const Color(0xff002055),
         ),
         appBarTheme: const AppBarTheme(
-          elevation: 0,
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          titleTextStyle: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-            color: Color(0xff002055),
-            fontFamily: 'Poppins',
-          ),
-        ),
+            elevation: 0,
+            backgroundColor: Colors.white,
+            centerTitle: true,
+            titleTextStyle: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+              color: Color(0xff002055),
+              fontFamily: 'Poppins',
+            ),
+            iconTheme: IconThemeData(
+              color: Color(0xff002055),
+              size: 30,
+            )),
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             backgroundColor: const Color(0xff3580FF),
