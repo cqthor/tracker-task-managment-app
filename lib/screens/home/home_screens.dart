@@ -15,6 +15,33 @@ class _HomeScreensState extends State<HomeScreens> {
     Text('chat'),
     Text('profile'),
   ];
+  static final List<AppBar> _appbars = [
+    AppBar(
+      title: const Text("Friday 26"),
+      leading: IconButton(
+        onPressed: () {},
+        icon: const Icon(Icons.menu),
+      ),
+      actions: [
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.notifications),
+        ),
+      ],
+    ),
+    AppBar(
+      title: const Text("Appbar"),
+    ),
+    AppBar(
+      title: const Text("Appbar"),
+    ),
+    AppBar(
+      title: const Text("Appbar"),
+    ),
+    AppBar(
+      title: const Text("Appbar"),
+    )
+  ];
   int _selectedIndex = 0;
   void _onItemTapped(int index) {
     setState(() {
@@ -25,6 +52,7 @@ class _HomeScreensState extends State<HomeScreens> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: _appbars.elementAt(_selectedIndex),
       body: Center(child: _pages.elementAt(_selectedIndex)),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
