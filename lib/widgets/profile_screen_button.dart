@@ -7,7 +7,7 @@ class ProfileScreenButton extends StatelessWidget {
     this.onPressed,
   }) : super(key: key);
   final String title;
-  final onPressed;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
