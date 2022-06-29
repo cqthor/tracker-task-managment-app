@@ -18,7 +18,6 @@ class ChatCardScreen extends StatelessWidget {
           child: Row(
             children: [
               CircleAvatar(
-                backgroundColor: Colors.blueAccent,
                 radius: 24,
                 backgroundImage: NetworkImage(photo),
               ),
