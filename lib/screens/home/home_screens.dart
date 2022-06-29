@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/chat/chat_screen.dart';
 import 'package:tracker/screens/home/body.dart';
 import 'package:tracker/screens/project/project_screen.dart';
 
@@ -14,11 +15,11 @@ class _HomeScreensState extends State<HomeScreens> {
     HomeScreenBody(),
     ProjectScreen(),
     Text('add'),
-    Text('chat'),
+    ChatScreen(),
     Text('profile'),
   ];
 
-  int _selectedIndex = 1;
+  int _selectedIndex = 3;
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
