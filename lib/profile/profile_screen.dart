@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tracker/widgets/profile_screen_button.dart';
+import 'package:tracker/widgets/custom_button.dart';
 import 'package:tracker/widgets/profile_task_card.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -97,10 +97,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Column(
                     children: const [
-                      ProfileScreenButton(title: "My Projects"),
-                      ProfileScreenButton(title: "Join a Team"),
-                      ProfileScreenButton(title: "Settings"),
-                      ProfileScreenButton(title: "My Tasks"),
+                      CustomButton(title: "My Projects"),
+                      CustomButton(title: "Join a Team"),
+                      CustomButton(title: "Settings"),
+                      CustomButton(title: "My Tasks"),
                     ],
                   ),
                 ),

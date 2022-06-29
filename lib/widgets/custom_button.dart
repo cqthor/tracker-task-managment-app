@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProfileScreenButton extends StatelessWidget {
-  const ProfileScreenButton({
+class CustomButton extends StatelessWidget {
+  const CustomButton({
     Key? key,
     required this.title,
     this.onPressed,
