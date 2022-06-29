@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tracker/screens/home/body.dart';
+import 'package:tracker/screens/project/project_screen.dart';
 
 class HomeScreens extends StatefulWidget {
   const HomeScreens({Key? key}) : super(key: key);
@@ -11,13 +12,13 @@ class HomeScreens extends StatefulWidget {
 class _HomeScreensState extends State<HomeScreens> {
   static const List<Widget> _pages = [
     HomeScreenBody(),
-    Text('folder'),
+    ProjectScreen(),
     Text('add'),
     Text('chat'),
     Text('profile'),
   ];
 
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
