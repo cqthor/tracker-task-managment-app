@@ -79,7 +79,11 @@ class _ProjectScreenState extends State<ProjectScreen> {
                             ),
                           ]),
                       IconButton(
-                          onPressed: (() {}), icon: const Icon(Icons.menu)),
+                          onPressed: (() {}),
+                          icon: const Icon(
+                            Icons.menu,
+                            color: Color(0xff848A94),
+                          )),
                     ],
                   ),
                 ),
