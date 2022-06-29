@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:tracker/widgets/search.dart';
 import 'package:tracker/widgets/task_card_2.dart';
@@ -59,17 +57,17 @@ class _ProjectScreenState extends State<ProjectScreen> {
                     children: [
                       TabBar(
                           // labelStyle: Theme.of(context).textTheme.headline5!,
-                          labelColor: Color(0xff002055),
-                          unselectedLabelColor: Color(0xff848A94),
+                          labelColor: const Color(0xff002055),
+                          unselectedLabelColor: const Color(0xff848A94),
                           indicator: BoxDecoration(
                               border: Border.all(
                                 width: 1,
                               ),
                               borderRadius: BorderRadius.circular(16)),
-                          indicatorColor: Color(0xff3580FF),
-                          padding: EdgeInsets.all(0),
+                          indicatorColor: const Color(0xff3580FF),
+                          padding: const EdgeInsets.all(0),
                           isScrollable: true,
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: "Favourites",
                             ),
@@ -80,7 +78,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                               text: "All",
                             ),
                           ]),
-                      IconButton(onPressed: (() {}), icon: Icon(Icons.menu)),
+                      IconButton(
+                          onPressed: (() {}), icon: const Icon(Icons.menu)),
                     ],
                   ),
                 ),
@@ -90,34 +89,34 @@ class _ProjectScreenState extends State<ProjectScreen> {
                   child: TabBarView(children: [
                     SingleChildScrollView(
                       child: Column(
-                        children: [
+                        children: const [
                           TaskCard2(
-                            progressColor: const Color(0xffB0D97F),
+                            progressColor: Color(0xffB0D97F),
                             groupTitle: "Design",
                             title: "Unity Dashboard ☺",
                           ),
                           TaskCard2(
-                            progressColor: const Color(0xffFFE1AC),
+                            progressColor: Color(0xffFFE1AC),
                             groupTitle: "Marketing",
                             title: "Instagram Shots ✍",
                           ),
                           TaskCard2(
-                            progressColor: const Color(0xffB2D29D),
+                            progressColor: Color(0xffB2D29D),
                             groupTitle: "Design",
                             title: "Cubbles 🤓",
                           ),
                           TaskCard2(
-                            progressColor: const Color(0xffB2D29D),
+                            progressColor: Color(0xffB2D29D),
                             groupTitle: "Design",
                             title: "Ui8 Platfrom 🤠",
                           ),
                         ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Tab View 2',
                     ),
-                    Text(
+                    const Text(
                       'Tab View 3',
                     )
                   ]),
