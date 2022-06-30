@@ -51,20 +51,23 @@ class TaskCard extends StatelessWidget {
               SizedBox(
                 child: Stack(children: const [
                   CircleAvatar(
-                    backgroundColor: Colors.green,
                     radius: 16,
+                    backgroundImage:
+                        NetworkImage("https://reqres.in/img/faces/7-image.jpg"),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 21),
                     child: CircleAvatar(
-                      backgroundColor: Colors.green,
+                      backgroundImage: NetworkImage(
+                          "https://reqres.in/img/faces/8-image.jpg"),
                       radius: 16,
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 42),
                     child: CircleAvatar(
-                      backgroundColor: Colors.green,
+                      backgroundImage: NetworkImage(
+                          "https://reqres.in/img/faces/9-image.jpg"),
                       radius: 16,
                     ),
                   ),

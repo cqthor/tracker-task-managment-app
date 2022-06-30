@@ -70,13 +70,15 @@ class TaskCard2 extends StatelessWidget {
                   children: [
                     Stack(children: const [
                       CircleAvatar(
-                        backgroundColor: Colors.green,
+                        backgroundImage: NetworkImage(
+                            "https://reqres.in/img/faces/8-image.jpg"),
                         radius: 12,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 16),
                         child: CircleAvatar(
-                          backgroundColor: Colors.green,
+                          backgroundImage: NetworkImage(
+                              "https://reqres.in/img/faces/7-image.jpg"),
                           radius: 12,
                         ),
                       ),

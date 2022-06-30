@@ -1,6 +1,6 @@
 class ChatCard {
-  final String name, lastActivity, photo;
+  final String name, photo;
+  final String? lastActivity;
 
-  ChatCard(
-      {required this.name, required this.lastActivity, required this.photo});
+  ChatCard({required this.name, this.lastActivity, required this.photo});
 }

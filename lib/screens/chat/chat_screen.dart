@@ -71,7 +71,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 itemBuilder: ((context, index) {
                   return ChatCardScreen(
                     name: chatCards[index].name,
-                    lastActivity: chatCards[index].lastActivity,
+                    lastActivity: chatCards[index].lastActivity!,
                     photo: chatCards[index].photo,
                   );
                 })),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/models/chat_card.dart';
 import 'package:tracker/widgets/time_picker.dart';
 
 class AddTask extends StatefulWidget {
@@ -22,6 +23,25 @@ class _AddTaskState extends State<AddTask> {
 
   List<String> boards = ["Urgent", "Running", "Ongoing"];
   int _selectedBoard = 1;
+
+  List<ChatCard> users = [
+    ChatCard(
+      name: "Jenny",
+      photo: "https://reqres.in/img/faces/7-image.jpg",
+    ),
+    ChatCard(
+      name: "Alex",
+      photo: "https://reqres.in/img/faces/8-image.jpg",
+    ),
+    ChatCard(
+      name: "Jafor",
+      photo: "https://reqres.in/img/faces/9-image.jpg",
+    ),
+    ChatCard(
+      name: "George ",
+      photo: "https://reqres.in/img/faces/11-image.jpg",
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -113,9 +133,9 @@ class _AddTaskState extends State<AddTask> {
                       height: 67,
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          itemCount: 5,
+                          itemCount: users.length + 1,
                           itemBuilder: (context, index) {
-                            return index == 4
+                            return index == users.length
                                 ? Column(
                                     children: [
                                       Container(
@@ -149,8 +169,8 @@ class _AddTaskState extends State<AddTask> {
                                             select(index);
                                           },
                                           child: CircleAvatar(
-                                            backgroundImage: const NetworkImage(
-                                              "https://reqres.in/img/faces/12-image.jpg",
+                                            backgroundImage: NetworkImage(
+                                              users[index].photo,
                                             ),
                                             child: selectedUsers.contains(index)
                                                 ? CircleAvatar(
@@ -165,7 +185,7 @@ class _AddTaskState extends State<AddTask> {
                                         ),
                                         const SizedBox(height: 6),
                                         Text(
-                                          "Jenny$index",
+                                          users[index].name,
                                           style: Theme.of(context)
                                               .textTheme
                                               .bodyText2!
