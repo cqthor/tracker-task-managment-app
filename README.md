@@ -1,9 +1,9 @@
 # Tracker x Flutter app
 
-
-smooth_page_indicator
-flutter_svg
-percent_indicator
+### Packages:
+- [smooth_page_indicator](https://pub.dev/packages/smooth_page_indicator)
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
+- [percent_indicator](https://pub.dev/packages/percent_indicator)
 ## Splash screen
 <img src="screenshots/splash_screen.png" width="270" height="570"/>
 
