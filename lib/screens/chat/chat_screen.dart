@@ -46,7 +46,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.menu,
-                  size: 36,
+                  size: 24,
                 ),
               ),
               Text("Chat", style: Theme.of(context).textTheme.headline3!),
@@ -54,7 +54,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.add_circle_outline,
-                  size: 36,
+                  size: 24,
                 ),
               ),
             ],

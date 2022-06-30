@@ -25,7 +25,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.menu,
-                  size: 36,
+                  size: 24,
                 ),
               ),
               Text("Profile", style: Theme.of(context).textTheme.headline3!),

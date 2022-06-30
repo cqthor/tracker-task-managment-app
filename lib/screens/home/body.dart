@@ -20,14 +20,14 @@ class HomeScreenBody extends StatelessWidget {
                   onPressed: () {},
                   icon: const Icon(
                     Icons.menu,
-                    size: 36,
+                    size: 24,
                   )),
               Text("Friday 26", style: Theme.of(context).textTheme.headline3!),
               IconButton(
                   onPressed: () {},
                   icon: const Icon(
                     Icons.notifications,
-                    size: 36,
+                    size: 24,
                   )),
             ],
           ),

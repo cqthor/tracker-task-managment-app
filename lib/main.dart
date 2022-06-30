@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const SettingScreen(),
+      home: const HomeScreens(),
     );
   }
 }
