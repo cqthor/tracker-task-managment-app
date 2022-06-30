@@ -4,11 +4,11 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     Key? key,
     required this.title,
-    this.onPressed,
+    required this.widget,
   }) : super(key: key);
   final String title;
-  final void Function()? onPressed;
 
+  final Widget widget;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -29,9 +29,7 @@ class CustomButton extends StatelessWidget {
               title,
               style: Theme.of(context).textTheme.headline5,
             ),
-            IconButton(
-                onPressed: onPressed,
-                icon: const Icon(Icons.navigate_next_outlined))
+            widget
           ],
         ),
       ),

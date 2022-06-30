@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tracker/profile/profile_screen.dart';
+
 import 'package:tracker/screens/chat/chat_screen.dart';
 import 'package:tracker/screens/home/body.dart';
+import 'package:tracker/screens/profile/profile_screen.dart';
 import 'package:tracker/screens/project/project_screen.dart';
 
 class HomeScreens extends StatefulWidget {

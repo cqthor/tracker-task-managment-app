@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/settings/setting_screen.dart';
 import 'package:tracker/widgets/custom_button.dart';
 import 'package:tracker/widgets/profile_task_card.dart';
 
@@ -96,11 +97,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Column(
-                    children: const [
-                      CustomButton(title: "My Projects"),
-                      CustomButton(title: "Join a Team"),
-                      CustomButton(title: "Settings"),
-                      CustomButton(title: "My Tasks"),
+                    children: [
+                      CustomButton(
+                        title: "My Projects",
+                        widget: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.navigate_next_outlined),
+                        ),
+                      ),
+                      CustomButton(
+                          title: "Join a Team",
+                          widget: IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.navigate_next_outlined),
+                          )),
+                      CustomButton(
+                        title: "Settings",
+                        widget: IconButton(
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const SettingScreen()));
+                          },
+                          icon: const Icon(Icons.navigate_next_outlined),
+                        ),
+                      ),
+                      CustomButton(
+                        title: "My Tasks",
+                        widget: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.navigate_next_outlined),
+                        ),
+                      ),
                     ],
                   ),
                 ),

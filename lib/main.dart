@@ -3,6 +3,7 @@
 import 'package:tracker/screens/home/home_screens.dart';
 import 'package:tracker/screens/login_signup/sign_in.dart';
 import 'package:tracker/screens/login_signup/sign_up.dart';
+import 'package:tracker/screens/settings/setting_screen.dart';
 import 'package:tracker/screens/splash/splash_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -106,7 +107,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomeScreens(),
+      home: const SettingScreen(),
     );
   }
 }
