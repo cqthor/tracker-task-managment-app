@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/add/add_screen.dart';
 
 import 'package:tracker/screens/chat/chat_screen.dart';
 import 'package:tracker/screens/home/body.dart';
@@ -21,11 +22,31 @@ class _HomeScreensState extends State<HomeScreens> {
     ProfileScreen(),
   ];
 
-  int _selectedIndex = 4;
+  int _selectedIndex = 0;
+
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index;
+      if (index == 2) {
+        addBottomSheet();
+      } else {
+        _selectedIndex = index;
+      }
     });
+  }
+
+  Future<dynamic> addBottomSheet() {
+    return showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(30),
+        ),
+      ),
+      clipBehavior: Clip.antiAliasWithSaveLayer,
+      builder: (context) {
+        return const AddScreen();
+      },
+    );
   }
 
   @override
