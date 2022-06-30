@@ -1,16 +1,30 @@
-# Tracker
+# Tracker x Flutter app
 
-A new Flutter project.
 
-## Getting Started
+smooth_page_indicator
+flutter_svg
+percent_indicator
+## Splash screen
+<img src="screenshots/splash_screen.png" width="270" height="570"/>
 
-This project is a starting point for a Flutter application.
+## Onboarding screens
 
-A few resources to get you started if this is your first Flutter project:
+<img src="screenshots/onb1.png" width="270" height="570"/>
+<img src="screenshots/onb2.png" width="270" height="570"/>
+<img src="screenshots/onb3.png" width="270" height="570"/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Login and SignUp screens
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="screenshots/sign_in.png" width="270" height="570"/><img src="screenshots/sign_up.png" width="270" height="570"/>
+
+## Main screens
+<img src="screenshots/home.png" width="270" height="570"/>
+<img src="screenshots/projects.png" width="270" height="570"/>
+<img src="screenshots/add.png" width="270" height="570"/>
+<img src="screenshots/chat.png" width="270" height="570"/>
+<img src="screenshots/profile.png" width="270" height="570"/>
+
+## other screens
+
+<img src="screenshots/add_task.png" width="270" height="570"/>
+<img src="screenshots/settings.png" width="270" height="570"/>
