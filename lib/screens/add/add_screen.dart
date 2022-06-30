@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracker/screens/add/add_task_screen.dart';
 import 'package:tracker/widgets/add_new_widget.dart';
 
 class AddScreen extends StatelessWidget {
@@ -14,7 +15,17 @@ class AddScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const SizedBox(height: 50),
-          const AddNewWidget(title: "Create Task", icon: Icons.create),
+          InkWell(
+              onTap: (() {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AddTask(),
+                  ),
+                );
+              }),
+              child:
+                  const AddNewWidget(title: "Create Task", icon: Icons.create)),
           const SizedBox(height: 16),
           const AddNewWidget(
             title: "Create Project",

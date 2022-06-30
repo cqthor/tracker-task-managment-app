@@ -1,5 +1,6 @@
 // ignore_for_file: unused_import
 
+import 'package:tracker/screens/add/add_task_screen.dart';
 import 'package:tracker/screens/home/home_screens.dart';
 import 'package:tracker/screens/login_signup/sign_in.dart';
 import 'package:tracker/screens/login_signup/sign_up.dart';
