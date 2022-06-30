@@ -24,7 +24,7 @@ percent_indicator
 <img src="screenshots/chat.png" width="270" height="570"/>
 <img src="screenshots/profile.png" width="270" height="570"/>
 
-## other screens
+## Other screens
 
 <img src="screenshots/add_task.png" width="270" height="570"/>
 <img src="screenshots/settings.png" width="270" height="570"/>
